@@ -133,9 +133,7 @@ header{
 
     color:white;
 
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=80");
+    background:url("hero-banner.png");
 
     background-size:cover;
 
@@ -143,7 +141,25 @@ header{
 
 }
 
+/* Dark overlay */
+
+header::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+
+}
+
 .hero{
+
+    position:relative;
+
+    z-index:2;
 
     max-width:900px;
 
@@ -159,7 +175,7 @@ header{
 
     margin-bottom:20px;
 
-    text-shadow:3px 3px 8px rgba(0,0,0,.6);
+    text-shadow:3px 3px 8px rgba(0,0,0,.7);
 
 }
 
@@ -168,6 +184,8 @@ header{
     font-size:1.4rem;
 
     margin-bottom:40px;
+
+    text-shadow:2px 2px 5px rgba(0,0,0,.7);
 
 }
 
@@ -207,13 +225,13 @@ header{
 
 .secondary{
 
-    background:#4a5d47;
+    background:#34543b;
 
 }
 
 .secondary:hover{
 
-    background:#607c5c;
+    background:#4f7655;
 
 }
 
